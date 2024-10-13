@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main()
+{
+int elec_uni;
+float tot;
+printf("enter electricity units:");
+scanf("%d",&elec_uni);
+if(elec_uni<=50)
+{
+tot=(elec_uni)*(0.50);
+}
+printf("total bill is %f", tot);
+else if(elec_uni<=150)
+{
+tot=(elec_uni)*(0.75);
+printf("total bill is %f", tot);
+}
+else if(elec_uni<=250)
+{
+tot=(elec_uni)*(1.20);
+printf("total bill is %f", tot);
+}
+else if(elec_uni>250)
+{
+tot=(elec_uni)*(1.50);
+printf("total bill is %f", tot);
+}
+}
